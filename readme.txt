@@ -27,11 +27,12 @@ It does. You probably did something wrong
 
 = How do I wrestle an alligator? =
 
-This page has some handy tips: http://www.artofmanliness.com/2010/10/19/how-to-wrestle-an-alligator/
+This page has some handy tips:
+http://www.artofmanliness.com/2010/10/19/how-to-wrestle-an-alligator/
 
 == Screenshots ==
 
-1. none - sorry!
+1. A popup
 
 == Changelog ==
 
