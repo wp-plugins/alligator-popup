@@ -7,7 +7,7 @@ Tested up to: 3.6.1
 Stable tag: 1.0.0
 License: GPLv3
 
-Links can be added to pages/posts via a shortcode and will be opened in a popup window
+Links can be added to pages/posts via a shortcode and will be opened in a popup window.
 
 == Description ==
 
