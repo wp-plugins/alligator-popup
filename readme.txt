@@ -7,22 +7,24 @@ Tested up to: 3.6.1
 Stable tag: 1.0.0
 License: GPLv3
 
-Links can be added to pages/posts via a shortcode and will be opened in a popup window.
+Add popups to your site. Add links to pages/posts via a shortcode which will be opened in a popup window.
 
 == Description ==
 
 This plugin allows you to add links to pages/posts which will be opened in a popup window.
 
-Add a shortcode where you would like a link to appear within your post or page text. The shortcode has parameters for url, height and width and should be in the format:
+Add a popup shortcode where you would like a link to appear within your post or page text. The shortcode has parameters for url, height and width and should be in the format:
 
 `[popup url="http://cubecolour.co.uk/wp" height="300" width="300"]Link Text[/popup]`
 
-Include your own Link Text and values for url, width & height.
+Include your own Link Text and values for the url and the width & height of the popup.
 
-If no values are entered for height and width, defaults of 400px are used.
+If no values are entered for height and width, defaults of 400px are used for the width & height of the popup window.
 
 #### Note:
 If you are using any other plugin (or a theme) that uses a shortcode with the name 'popup', you will not be able to use this plugin.
+
+On mobile devices such as iPads which don't use browser windows, the link will open in a new tab. 
 
 This plugin was written in response to a post by a WordPress.org forum user who promised to wrestle an alligator if his problem with creating popups was solved.
 
