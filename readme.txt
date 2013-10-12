@@ -43,9 +43,17 @@ This plugin was written in response to a post by a WordPress.org forum user who 
 
 == Frequently Asked Questions ==
 
+= What is the syntax of the shortcode? =
+
+`[popup url="http://cubecolour.co.uk/wp" height="300" width="300"]Link Text[/popup]`
+
+= What is the syntax of a link if I'm not using the shortcode? =
+
+`<a href="http://cubecolour.co.uk/wp" class="popup" data-height="300" data-width="300">Link Text</a>`
+
 = Why doesn't it work? =
 
-It does. You probably did something wrong
+It does. You probably did something wrong. Feel free to ask for help on the forum.
 
 = How do I wrestle an alligator? =
 
@@ -60,9 +68,6 @@ http://www.artofmanliness.com/2010/10/19/how-to-wrestle-an-alligator/
 
 = 1.0.0 =
 * Initial Version
-
-= 1.0.1 =
-* Improved Readme documentation
 
 == Upgrade Notice ==
 
