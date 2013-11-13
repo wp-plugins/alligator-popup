@@ -11,7 +11,7 @@ Add popups to your site. Add links to pages/posts via a shortcode which will be 
 
 == Description ==
 
-This plugin allows you to add links to pages/posts which will be opened in a popup window.
+This plugin allows you to add links to pages/posts which will be opened in a popup window. The only options in Alligator popup are entered in shortcode, so there is no separate admin page for this plugin.
 
 #### Shortcode:
 Add a popup shortcode where you would like a link to appear within your post or page text. The shortcode has parameters for url, height and width and should be in the format:
@@ -40,8 +40,14 @@ This plugin was written in response to a post by a WordPress.org forum user who 
 
 1. Upload the plugin folder to the '/wp-content/plugins/' directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
+1. Add a popup link to a page by including the shortcode to your content in the format:
+`[popup url="http://cubecolour.co.uk/wp" height="300" width="300"]Link Text[/popup]`
 
 == Frequently Asked Questions ==
+
+= Where is the admin page? =
+
+It doesn't have any options that need an admin page, so there isn't one.
 
 = What is the syntax of the shortcode? =
 
