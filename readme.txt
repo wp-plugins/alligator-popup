@@ -65,7 +65,7 @@ It does. You probably did something wrong. Feel free to ask for help on the foru
 
 You can donate via [my donation page](http://cubecolour.co.uk/wp/ "cubecolour donation page")
 
-If you find the plugin useful I would also appreciate a glowing five star reviews on the [plugin review page](http://wordpress.org/support/view/plugin-reviews/audio-album/ "audio album plugin review page")
+If you find the plugin useful I would also appreciate a glowing five star review on the [plugin review page](http://wordpress.org/support/view/plugin-reviews/alligator-popup "alligator popup plugin review page")
 
 = How do I wrestle an alligator? =
 
