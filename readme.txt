@@ -61,6 +61,12 @@ It doesn't have any options that need an admin page, so there isn't one.
 
 It does. You probably did something wrong. Feel free to ask for help on the forum.
 
+= I am using the plugin and love it, how can I show my appreciation? =
+
+You can donate via [my donation page](http://cubecolour.co.uk/wp/ "cubecolour donation page")
+
+If you find the plugin useful I would also appreciate a glowing five star reviews on the [plugin review page](http://wordpress.org/support/view/plugin-reviews/audio-album/ "audio album plugin review page")
+
 = How do I wrestle an alligator? =
 
 This page has some handy tips:  
