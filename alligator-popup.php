@@ -2,13 +2,13 @@
 /*
 Plugin Name: Alligator Popup
 Plugin URI: http://cubecolour.co.uk/alligator-popup
-Description: Shortcode to open a link in a popup window
+Description: Shortcode to open a link inside a popup browser window
 Author: cubecolour
-Version: 1.0.1
+Version: 1.1.0
 Author URI: http://cubecolour.co.uk/
 License: GPLv3
 
-  Copyright 2013 Michael Atkins
+  Copyright 2013-2014 Michael Atkins
 
   Licenced under the GNU GPL:
 
@@ -27,6 +27,25 @@ License: GPLv3
   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
+
+// ==============================================
+//  Prevent Direct Access of this file
+// ==============================================
+
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if this file is accessed directly
+
+// ==============================================
+//	Get Plugin Version
+// ==============================================
+
+function cc_popup_plugin_version() {
+	if ( ! function_exists( 'get_plugins' ) )
+		require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+	$plugin_folder = get_plugins( '/' . plugin_basename( dirname( __FILE__ ) ) );
+	$plugin_file = basename( ( __FILE__ ) );
+	return $plugin_folder[$plugin_file]['Version'];
+}
+
 // ==============================================
 //	Add Links in Plugins Table
 // ==============================================
@@ -38,25 +57,36 @@ function cc_popup_meta_links( $links, $file ) {
 	
 // create the links
 	if ( $file == $plugin ) {
-		return array_merge( $links, array( '<a href="http://cubecolour.co.uk/wp">Donate</a>', '<a href="http://twitter.com/cubecolour">cubecolour on Twitter</a>' ) );
+		
+		$supportlink = 'https://wordpress.org/support/plugin/alligator-popup';
+		$donatelink = 'http://cubecolour.co.uk/wp';
+		$reviewlink = 'https://wordpress.org/support/view/plugin-reviews/alligator-popup?rate=5#postform';
+		$iconstyle = 'style="-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;"';
+		
+		return array_merge( $links, array(
+			'<a href="' . $donatelink . '"><span class="dashicons dashicons-heart"' . $iconstyle . 'title="Donate"></span></a>',
+			'<a href="' . $supportlink . '"> <span class="dashicons dashicons-lightbulb" ' . $iconstyle . 'title="Support"></span></a>',
+			'<a href="' . $twitterlink . '"><span class="dashicons dashicons-twitter" ' . $iconstyle . 'title="Cubecolour on Twitter"></span></a>',
+			'<a href="' . $reviewlink . '"><span class="dashicons dashicons-star-filled"' . $iconstyle . 'title="Review"></span></a>'
+		) );
 	}
 	
 	return $links;
 }
 
 // ==============================================
-// Register and Enqueue script
+// Register and Enqueue popup script
 // ==============================================
 
 function cc_popup_script() {
-	wp_register_script( 'popup', plugins_url() . "/" . basename(dirname(__FILE__)) . '/js/popup.js', array('jquery'), '1.0.0', false );
+	wp_register_script( 'popup', plugins_url() . "/" . basename(dirname(__FILE__)) . '/js/popup.js', array('jquery'), cc_popup_plugin_version(), false );
 	wp_enqueue_script( 'popup' );
  }
  
 add_action('wp_enqueue_scripts', 'cc_popup_script');
 
 // ==============================================
-// shortcode to add 'popup' class to a link & add data attributes for height & width
+// shortcode to add a link with the 'popup' class with data attributes for height, width and scrollbars
 // ==============================================
 
 function cc_popup_shortcode( $atts, $content = null ) {
@@ -64,9 +94,20 @@ function cc_popup_shortcode( $atts, $content = null ) {
 		'url' => '#',
 		'width' => '400',
 		'height' => '400',
+		'scrollbars' => '1',
 	), $atts ) );
 	
-	return '<a href="' . esc_attr($url) . '" class="popup" data-width="' . esc_attr($width) . '" data-height="' . esc_attr($height) . '">' . $content . '</a>';
+	$showscrollbars = esc_attr($scrollbars);
+	
+	if (strtolower( $showscrollbars ) == 'no') {
+		$showscrollbars = '0'; 
+	}
+	
+	if ($showscrollbars != '0') {
+		$showscrollbars = '1'; 
+	}
+	
+	return '<a href="' . esc_url($url) . '" class="popup" data-width="' . absint( $width ) . '" data-height="' . absint( $height ) . '" data-scrollbars="' . $showscrollbars . '">' . $content . '</a>';
 }
 
 add_shortcode( 'popup', 'cc_popup_shortcode' );

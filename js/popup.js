@@ -4,11 +4,12 @@ jQuery(document).ready(function($) {
 	
 		var w = $(this).data('width');
 		var h = $(this).data('height');
+		var s = $(this).data('scrollbars');
 
 		var left = (screen.width/2) - (w/2);
 		var top = (screen.height/2) - (h/2);
 				
-		var NWin = window.open($(this).prop('href'),'','scrollbars=1,width=' + w + ',height=' + h + ',top=' + top + ',left=' + left);
+		var NWin = window.open($(this).prop('href'),'','scrollbars=' + s + ',width=' + w + ',height=' + h + ',top=' + top + ',left=' + left);
 
 		if (window.focus)
 		
