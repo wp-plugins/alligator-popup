@@ -4,7 +4,7 @@ Donate link: http://cubecolour.co.uk/wp
 Tags: popup, popups, popup window, jQuery, shortcode, simple, popup link, message, popup message,
 Requires at least: 3.6.1
 Tested up to: 3.9.1
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv2
 
 Add popups to your site. Add links to pages/posts via a shortcode which will be opened in a popup browser window.
@@ -83,6 +83,9 @@ http://www.artofmanliness.com/2010/10/19/how-to-wrestle-an-alligator/
 
 == Changelog ==
 
+= 1.1.1 =
+* Undefined variable fixed in plugin page links
+
 = 1.1.0 =
 * Dynamic Version number added to script enqueue
 * Plugin Page Links
@@ -95,7 +98,10 @@ http://www.artofmanliness.com/2010/10/19/how-to-wrestle-an-alligator/
 * Initial Version
 
 == Upgrade Notice ==
-= 1.0.1 =
+= 1.1.1 =
+* Undefined variable fixed in plugin page links
+
+= 1.1.0 =
 * Small improvements including addition of arg to control whether scrollbars are shown on the popup
 
 = 1.0.1 =

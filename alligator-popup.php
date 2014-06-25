@@ -4,7 +4,7 @@ Plugin Name: Alligator Popup
 Plugin URI: http://cubecolour.co.uk/alligator-popup
 Description: Shortcode to open a link inside a popup browser window
 Author: cubecolour
-Version: 1.1.0
+Version: 1.1.1
 Author URI: http://cubecolour.co.uk/
 License: GPLv3
 
@@ -62,6 +62,7 @@ function cc_popup_meta_links( $links, $file ) {
 		$donatelink = 'http://cubecolour.co.uk/wp';
 		$reviewlink = 'https://wordpress.org/support/view/plugin-reviews/alligator-popup?rate=5#postform';
 		$iconstyle = 'style="-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;"';
+		$twitterlink = 'http://twitter.com/cubecolour';
 		
 		return array_merge( $links, array(
 			'<a href="' . $donatelink . '"><span class="dashicons dashicons-heart"' . $iconstyle . 'title="Donate"></span></a>',
