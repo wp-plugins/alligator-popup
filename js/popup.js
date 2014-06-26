@@ -8,8 +8,8 @@ jQuery(document).ready(function($) {
 
 		var left = (screen.width/2) - (w/2);
 		var top = (screen.height/2) - (h/2);
-				
-		var NWin = window.open($(this).prop('href'),'','scrollbars=' + s + ',width=' + w + ',height=' + h + ',top=' + top + ',left=' + left);
+
+		var NWin = window.open($(this).prop('href'),'','scrollbars=' + s + ',resizable=yes,width=' + w + ',height=' + h + ',top=' + top + ',left=' + left);
 
 		if (window.focus)
 		

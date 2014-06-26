@@ -4,7 +4,7 @@ Plugin Name: Alligator Popup
 Plugin URI: http://cubecolour.co.uk/alligator-popup
 Description: Shortcode to open a link inside a popup browser window
 Author: cubecolour
-Version: 1.1.1
+Version: 1.1.2
 Author URI: http://cubecolour.co.uk/
 License: GPLv3
 
