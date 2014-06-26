@@ -16,13 +16,13 @@ This plugin allows you to enter a shortcode to add links to pages/posts which wi
 #### Shortcode:
 Add a popup shortcode where you would like a link to appear within your post or page text. The shortcode has parameters for url, height and width and should be in the format:
 
-`[popup url="http://cubecolour.co.uk/wp" height="300" width="300" scrollbars="1" ]Link Text[/popup]`
+`[popup url="http://cubecolour.co.uk/wp" height="300" width="300" scrollbars="yes" ]Link Text[/popup]`
 
 Include your own Link Text and values for the url and the width & height of the popup.
 
 If no values are entered for height and width, defaults of 400px are used for the width & height of the popup window.
 
-Scrollbars are enabled by default. If you do not want scrollbars on your popup window, use `scrollbars="0"` in the shortcode.
+Scrollbars are enabled by default and will show if the scrollbars parameter is not added to the shortcode. If you do not want scrollbars on your popup window, add the scrollbars parameter with the value "no" to the shortcode: `scrollbars="no"` 
 
 #### HTML Link:
 Instead of using the shortcode you can include your link in the format:
