@@ -95,7 +95,7 @@ function cc_popup_shortcode( $atts, $content = null ) {
 		'url' => '#',
 		'width' => '400',
 		'height' => '400',
-		'scrollbars' => '1',
+		'scrollbars' => '',
 	), $atts ) );
 	
 	$showscrollbars = esc_attr($scrollbars);
