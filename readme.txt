@@ -37,7 +37,8 @@ On mobile devices such as iPads which don't use browser windows, the link will o
 
 This plugin was written in response to a post by a WordPress.org forum user who promised to wrestle an alligator if his problem with creating popups was solved.
 
-If you need to open your page in a popup from a menu item, my [Alligator Menu Popup](https://wordpress.org/plugins/alligator-menu-popup/ "alligator menu popup") will enable you to do this.
+**Alligator Menu Popup**
+If you need to open your popup from a (WordPress custom) menu item, my [Alligator Menu Popup](https://wordpress.org/plugins/alligator-menu-popup/ "alligator menu popup") plugin will enable you to do this.
 
 == Installation ==
 
