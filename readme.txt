@@ -16,17 +16,17 @@ This plugin allows you to enter a shortcode to add links to pages/posts which wi
 #### Shortcode:
 Add a popup shortcode where you would like a link to appear within your post or page text. The shortcode has parameters for url, height and width and should be in the format:
 
-`[popup url="http://cubecolour.co.uk/wp" height="300" width="300" scrollbars="yes" ]Link Text[/popup]`
+`[popup url="http://cubecolour.co.uk/wp" height="300" width="300" scrollbars="no" ]Link Text[/popup]`
 
 Include your own Link Text and values for the url and the width & height of the popup.
 
 If no values are entered for height and width, defaults of 400px are used for the width & height of the popup window.
 
-Scrollbars are enabled by default and will show if the scrollbars parameter is not added to the shortcode. If you do not want scrollbars on your popup window, add the scrollbars parameter with the value "no" to the shortcode: `scrollbars="no"` 
+Scrollbars are enabled by default and will show if the scrollbars parameter is not added to the shortcode. If you do not want scrollbars on your popup window, add the scrollbars parameter with the value "no" to the shortcode: `scrollbars="no"` If a value for the scrollbars parameter is not specified or any value other than 'no' is used, the popup window will have scrollbars.
 
 #### HTML Link:
 Instead of using the shortcode you can include your link in the format:
-`<a href="http://cubecolour.co.uk/wp" class="popup" data-height="300" data-width="300" data-scrollbars="0">Link Text</a>`
+`<a href="http://cubecolour.co.uk/wp" class="popup" data-height="300" data-width="300" data-scrollbars="no">Link Text</a>`
 
 This might be useful in a text widget, or you can build the link in a template file of your theme.
 
@@ -37,36 +37,41 @@ On mobile devices such as iPads which don't use browser windows, the link will o
 
 This plugin was written in response to a post by a WordPress.org forum user who promised to wrestle an alligator if his problem with creating popups was solved.
 
+If you need to open your page in a popup from a menu item, my [Alligator Menu Popup](https://wordpress.org/plugins/alligator-menu-popup/ "alligator menu popup") will enable you to do this.
 
 == Installation ==
 
 1. Upload the plugin folder to the '/wp-content/plugins/' directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
 1. Add a popup link to a page by including the shortcode to your content in the format:
-`[popup url="http://cubecolour.co.uk/wp" height="300" width="300" scrollbars="0"]Link Text[/popup]`
+`[popup url="http://cubecolour.co.uk/wp" height="300" width="300" scrollbars="no"]Link Text[/popup]`
 
 == Frequently Asked Questions ==
 
 = Where is the admin page? =
 
-It doesn't have any options that need an admin page, so there isn't one.
+It doesn't have any options that require an admin page, so there isn't one.
 
 = What is the syntax of the shortcode? =
 
-`[popup url="http://cubecolour.co.uk/wp" height="300" width="300" scrollbars="0"]Link Text[/popup]`
-The values for height and width must be positive integers and the value for scrollbars must be either 1 (to show scrollbars) or 0 (to not show scrollbars)
+`[popup url="http://cubecolour.co.uk/wp" height="300" width="300" scrollbars="no"]Link Text[/popup]`
+The values for height and width must be positive integers and the value for scrollbars can be either 'yes' (to show scrollbars) or 'no' (to not show scrollbars).
 
 = Are the shortcode parameters all necessary? =
 
-The url is a mandatory parameter but height, widths and scrollbars are optional parameters, Default values will be used for any not present.
+The url is a mandatory parameter but height, widths and scrollbars are optional and defaults will be used if no values are specified.
 
 = What is the syntax of a link if I'm not using the shortcode? =
 
-`<a href="http://cubecolour.co.uk/wp" class="popup" data-height="300" data-width="300" data-scrollbars="0">Link Text</a>`
+`<a href="http://cubecolour.co.uk/wp" class="popup" data-height="300" data-width="300" data-scrollbars="no">Link Text</a>`
 
 = Why doesn't it work? =
 
 The plugin does work on the sites it has been tested on. If it is not working for you, you may have done something wrong or maybe your theme is not built to WordPress standards. Feel free to ask for help on the forum.
+
+= How can I open my page inside popup window from a WordPress custom menu item? =
+
+I have created the [Alligator Menu Popup](https://wordpress.org/plugins/alligator-menu-popup/ "alligator menu popup") plugin which can do this.
 
 = I am using the plugin and love it, how can I show my appreciation? =
 
