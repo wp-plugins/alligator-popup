@@ -4,7 +4,7 @@ Plugin Name: Alligator Popup
 Plugin URI: http://cubecolour.co.uk/alligator-popup
 Description: Shortcode to open a link inside a popup browser window
 Author: cubecolour
-Version: 1.1.2
+Version: 1.2.0
 Author URI: http://cubecolour.co.uk/
 License: GPLv3
 
@@ -61,7 +61,7 @@ function cc_popup_meta_links( $links, $file ) {
 		$supportlink = 'https://wordpress.org/support/plugin/alligator-popup';
 		$donatelink = 'http://cubecolour.co.uk/wp';
 		$reviewlink = 'https://wordpress.org/support/view/plugin-reviews/alligator-popup?rate=5#postform';
-		$iconstyle = 'style="-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;"';
+		$iconstyle = 'style="-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size: 14px;margin: 4px 0 -4px;"';
 		$twitterlink = 'http://twitter.com/cubecolour';
 		
 		return array_merge( $links, array(
@@ -95,10 +95,11 @@ function cc_popup_shortcode( $atts, $content = null ) {
 		'url' => '#',
 		'width' => '400',
 		'height' => '400',
-		'scrollbars' => '',
+		'scrollbars' => 'yes',
+		'alt' => ''
 	), $atts ) );
 	
-	$showscrollbars = esc_attr($scrollbars);
+	$showscrollbars = esc_attr( $scrollbars );
 	
 	if (strtolower( $showscrollbars ) == 'no') {
 		$showscrollbars = '0'; 
@@ -108,7 +109,7 @@ function cc_popup_shortcode( $atts, $content = null ) {
 		$showscrollbars = '1'; 
 	}
 	
-	return '<a href="' . esc_url($url) . '" class="popup" data-width="' . absint( $width ) . '" data-height="' . absint( $height ) . '" data-scrollbars="' . $showscrollbars . '">' . $content . '</a>';
+	return '<a href="' . esc_url( $url ) . '" class="popup" data-width="' . absint( $width ) . '" data-height="' . absint( $height ) . '" data-scrollbars="' . $showscrollbars . '" alt="' . esc_attr( $alt ) . '">' . $content . '</a>';
 }
 
 add_shortcode( 'popup', 'cc_popup_shortcode' );
