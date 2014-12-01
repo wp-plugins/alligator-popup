@@ -70,9 +70,9 @@ The url is a mandatory parameter but height, widths and scrollbars are optional 
 
 The plugin does work on the sites it has been tested on. If it is not working for you, you may have done something wrong or maybe your theme is not built to WordPress standards. Feel free to ask for help on the [Alligator Popup plugin support page on WordPress.org](http://wordpress.org/support/plugin/alligator-popup "Alligator Popup plugin support page on WordPress.org").
 
-= What levles of support are available? =
+= What levels of support are available? =
 
-I offer free forum support for my free cubecolour plugins where all communication takes place on the WordPress.org forums and I can see the issue without needing a password. Non-free email support is available via my own site if the conditions of the public forum are not compatible with the level of support required. Non-free email support can be requested at: [cubecolour.co.uk/premium-support](http://cubecolour.co.uk/premium-support "cubecolour.co.uk/premium-support")
+I offer free forum support for free cubecolour plugins where all communication takes place on the WordPress.org forums and a link is provided to the page on your site where I can see the issue without needing a password. Non-free support via email is available if the conditions of obtaining free support on the public forum are not compatible with the level of support required. Non-free email support can be requested at: [cubecolour.co.uk/premium-support](http://cubecolour.co.uk/premium-support "cubecolour.co.uk/premium-support")
 
 = I am using the plugin and love it, how can I show my appreciation? =
 
