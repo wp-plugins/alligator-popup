@@ -3,7 +3,7 @@ Contributors: numeeja
 Donate link: http://cubecolour.co.uk/wp
 Tags: popup, popups, popup window, jQuery, shortcode, simple, popup link, message, popup message,
 Requires at least: 3.6.1
-Tested up to: 4.0
+Tested up to: 4.0.1
 Stable tag: 1.2.0
 License: GPLv2
 
@@ -22,7 +22,7 @@ Include your own Link Text and values for the url the width & height of the popu
 
 If no values are entered for the alt text and the height and width, defaults of 400px are used for the width & height of the popup window.
 
-Scrollbars are enabled by default and will show if the scrollbars parameter is not added to the shortcode. If you do not want scrollbars on your popup window, add the scrollbars parameter with the value "no" to the shortcode: `scrollbars="no"` 
+Scrollbars are enabled by default and will show if the scrollbars parameter is not added to the shortcode. If you do not want scrollbars on your popup window, add the scrollbars parameter with the value "no" to the shortcode: `scrollbars="no"`
 
 If no value is entered for the alt text, an empty alt tag will be used in the link.
 
@@ -35,7 +35,7 @@ This might be useful in a text widget, or you can build the link in a template f
 #### Note:
 If you are using any other plugin (or a theme) that uses a shortcode with the name 'popup', you will not be able to use this plugin. This is not because of any shortcoming in this plugin, but because shortcodes such as those to create popup links should always be implemented in a plugin not a theme.
 
-On mobile devices such as iPads which don't use browser windows, the link will open in a new tab. 
+On mobile devices such as iPads which don't use browser windows, the link will open in a new tab.
 
 This plugin was written in response to a post by a WordPress.org forum user who promised to wrestle an alligator if his problem with creating popups was solved.
 
@@ -70,13 +70,17 @@ The url is a mandatory parameter but height, widths and scrollbars are optional 
 
 The plugin does work on the sites it has been tested on. If it is not working for you, you may have done something wrong or maybe your theme is not built to WordPress standards. Feel free to ask for help on the forum.
 
+= What support is available? =
+
+I offer free forum support for my free cubecolour plugins where all communication takes place on the WordPress.org forums and I can see the issue without needing a password. Non-free email support is available via my own site if the conditions of the public forum are not compatible with the level of support required. Non-free email support can be requested at: [cubecolour.co.uk/premium-support](http://cubecolour.co.uk/premium-support "cubecolour.co.uk/premium-support")
+
 = I am using the plugin and love it, how can I show my appreciation? =
 
 You can donate via [my donation page](http://cubecolour.co.uk/wp/ "cubecolour donation page"). If you find the plugin useful I would also appreciate a glowing five star review on the [plugin review page](http://wordpress.org/support/view/plugin-reviews/alligator-popup "alligator popup plugin review page")
 
 = How do I wrestle an alligator? =
 
-This page has some handy tips:  
+This page has some handy tips:
 http://www.artofmanliness.com/2010/10/19/how-to-wrestle-an-alligator/
 
 == Screenshots ==
